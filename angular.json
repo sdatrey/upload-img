@@ -24,6 +24,7 @@
               "src/assets"
             ],
             "styles": [
+              "src/custom-theme.scss",
               "src/styles.css"
             ],
             "scripts": []
@@ -117,8 +118,16 @@
               "devServerTarget": "upload-files:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
-    }},
-  "defaultProject": "upload-files"
+    }
+  },
+  "defaultProject": "upload-files",
+  "cli": {
+    "analytics": "0878bdc2-4b2e-4f5f-be14-c54500cafc54"
+  }
 }

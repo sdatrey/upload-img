@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "image-upload-631b9": {
+      "hosting": {
+        "upload-files": [
+          "image-upload-631b9"
+        ]
+      }
+    }
+  }
+}

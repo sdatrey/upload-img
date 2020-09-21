@@ -1,0 +1,32 @@
+<div class="mat-app-background">
+  <div class="row">
+    <div class="col-sm-12">
+      <form [formGroup] = "uploadForm"
+          >
+        <mat-card>
+              <mat-form-field>
+                <mat-label>Photo you posted</mat-label>
+                <ngx-mat-file-input
+                  accept="image/*"
+                  formControlName="photo">
+                </ngx-mat-file-input>
+                <mat-icon matSuffix>folder</mat-icon>
+              </mat-form-field>
+              <mat-form-field appearance="outline">
+                <mat-label>Describe your photo</mat-label>
+                <textarea formControlName="description" matInput placeholder="describe your photo"></textarea>
+              </mat-form-field>
+          <mat-card-actions>
+            <button
+              mat-raised-button
+              color="primary"
+              (click)="postImage()"
+            >
+            Post
+            </button>
+          </mat-card-actions>
+        </mat-card>
+      </form>
+    </div>
+  </div>
+</div>
